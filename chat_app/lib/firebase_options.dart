@@ -30,11 +30,12 @@ class DefaultFirebaseOptions {
           'DefaultFirebaseOptions have not been configured for macos - '
           'you can reconfigure this by running the FlutterFire CLI again.',
         );
-    }
 
-    throw UnsupportedError(
-      'DefaultFirebaseOptions are not supported for this platform.',
-    );
+      default:
+        throw UnsupportedError(
+          'DefaultFirebaseOptions are not supported for this platform.',
+        );
+    }
   }
 
   static const FirebaseOptions web = FirebaseOptions(
@@ -61,7 +62,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '1046617815837',
     projectId: 'chat-app-d17c9',
     storageBucket: 'chat-app-d17c9.appspot.com',
-    iosClientId: '1046617815837-91p6unqg2cuekro6j52irscb78usjs5r.apps.googleusercontent.com',
+    iosClientId:
+        '1046617815837-91p6unqg2cuekro6j52irscb78usjs5r.apps.googleusercontent.com',
     iosBundleId: 'com.example.chatApp',
   );
 }
