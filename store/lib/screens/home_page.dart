@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
           IconButton(
               onPressed: () {},
               icon: Icon(
-                FontAwesomeIcons.cartPlus,
+                FontAwesomeIcons.cartPlus.data,
                 color: Colors.black,
               ))
         ],
